@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link href="../css/public.css" rel="stylesheet" type="text/css">
+<link href="../css/header-and-footer.css" rel="stylesheet" type="text/css">
+<link href="../css/bookDisplay/index.css" rel="stylesheet" type="text/css">
+<script src="../js/public/jQuery-v1.11.1.js"></script>
+<script src="../js/public/wordLimit.js"></script>
+<script src="../js/public/divSelect.js"></script>
+</head>
+<body bgcolor="#cccccc">
+	<div class="findError">
+    	<a href="javascript:;" class="close"></a>
+    	<h1>图书信息纠错</h1>
+        <div class="intro">
+        	<img src="../imagesTemp/bookDisplay/pic2.jpg" width="45" height="59">
+            <p class="p1">无止境的逃离</p>
+            <p class="p2"> 甘迪 / 北京联合出版公司 / 2018-4</p>
+        </div>
+        <div class="box">
+            	<p>纠错内容:</p>
+                <div class="textarea">
+                            		<textarea></textarea>
+                               		 <span class="count"><i>0</i>/1000</span>
+                                <script>
+								//PromptToggle($(".textarea textarea"),"请输入您的评论内容，评论内容将由主编筛选后显示，对所有人可见。","colorGrey")
+									 wordLimit($(".textarea textarea"),1000)
+									 $(".textarea textarea").keyup(function(){
+										 var counts=$(this).val().length
+										 $(".textarea .count i").text(counts) 
+										 })
+                                </script>
+            </div>
+            	<div class="btn">
+                	<a href="javascript:;" class="a1 left">提交</a>
+                    <a href="javascript:;" class="a2 left">取消</a>
+                </div>
+    	</div>
+    <script>
+		$(".tabWrap a").click(function(){
+			$(this).addClass("cur").siblings().removeClass("cur")
+			var index=$(this).index()
+			$(".contWrap .tabc").eq(index).show().siblings().hide()
+			})
+    $.divselect($(".select p"),$(".select ul"),$(".select ul li"));
+    </script>
+</body>
+</html>

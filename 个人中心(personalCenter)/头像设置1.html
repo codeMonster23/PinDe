@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>个人中心</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link href="../css/public.css" rel="stylesheet" type="text/css">
+<link href="../css/header-and-footer.css" rel="stylesheet" type="text/css">
+<link href="../css/personalCenter/personalCenter.css" rel="stylesheet" type="text/css">
+<script src="../js/public/jQuery-v1.11.1.js"></script>
+<script src="../js/public/jquery-tableMenu.js"></script>
+</head>
+<body>
+<!--header-->
+	<div class="header"> 
+    	<div class="width1238pxAuto">
+        	<a href="#" class="logo left"><img src="../images/header-and-footer/logo.png" width="158" height="71"></a>
+            <div class="topNav left"><a href="#">精选好书</a><a href="#">发现好书</a><a href="#">好书品读</a><a href="#">新书速递</a><a href="#">出版社</a></div>
+            <div class="search left"><input type="text" class="left" autocomplete="off"><a href="javascript:;" class="btn left"></a></div>
+            <div class="status left"><a href="#">登录</a><span class="line left"></span><a href="#">注册</a></div>
+            <a href="#" class="rzbtn left">出版社认证</a>
+        </div>
+    </div>
+ <!--content-->
+ <div class="pcWrap">
+ 	<div class="frame clearfix">
+    	<img class="icon" src="../images/bookDisplay/leaf.png" width="255" height="184">
+    	<div class="menu left">
+        	<div class="intro">
+            	<a href="#" target="_blank" class="avatar"><img src="../imagesTemp/goodBook/pic1.jpg" width="120" height="120"></a>
+                <p class="name"><a href="#" target="_blank">叽里咕噜有一套</a></p>
+                <p class="link"><a href="#" target="_blank">进入我的个人主页>></a></p>
+            </div> 
+            <div class="box box1">
+            	<p class="first"><a href="#">首页</a></p>
+            </div>
+            <div class="box box2">
+            	<p class="first"><a href="#">我的品得</a></p>
+                <ul>
+                	<li><a href="#">我发布的书评</a></li>
+                    <li><a href="#">我撰写的书评</a></li>
+                    <li><a href="#">我创建的书单</a></li>
+                    <li><a href="#">我推荐的好书</a></li>
+                </ul>
+            </div>
+            <div class="box box3 cur">
+            	<p class="first"><a href="#">我的收藏</a></p>
+            </div>
+            <div class="box box4">
+            	<p class="first"><a href="#">评论管理</a></p>
+                <ul>
+                	<li><a href="#">品读评论</a></li>
+                    <li><a href="#">书单评论</a></li>
+                </ul>
+            </div>
+              <div class="box box5">
+            	<p class="first"><a href="#">关注与粉丝</a></p>
+            </div>
+              <div class="box box6">
+            	<p class="first"><a href="#">个人资料</a></p>
+            </div>
+        </div> 
+        <div class="main left clearfix">
+			<!--个人资料-->
+            <div class="contentE">
+            	<div class="tabNav clearfix">
+                	<a href="javascript:;" class="tab">基本资料</a>
+                    <a href="javascript:;" class="tab cur">头像设置</a>
+                    <a href="javascript:;" class="tab">手机绑定</a>
+                    <a href="javascript:;" class="tab">修改密码</a>
+                </div>
+                <div class="tabWrap">
+                	<!--头像设置-->
+                    <div class="tabc c2">
+						<div class="htab">
+                        	<a href="javascript:;" class="cur">上传头像</a>
+                            <a href="javascript:;">系统头像</a>
+                        </div>
+                        <div class="htabc  hc1 clearfix">
+                        	<div class="area left">
+                            	<div class="step1">
+                                	<a href="javascript:;" class="btn">选择您要上传的头像</a>
+                                    <p class="tips">支持jpg、gif、png或bmp格式，<br>大小不超过2M，可裁减至满意。</p>
+                                </div>
+                            </div>
+                            <div class="pvw left">
+                            	<p class="p1">预览</p>
+                                <div class="avc">
+                                </div>
+                                 <p class="p2">124px x 124px</p>
+                            </div>
+                        </div>
+               		 </div>
+            </div>
+        </div>
+    </div>
+ </div>
+  </div>
+<!--footer-->
+    <div class="footer">
+    	<div class="width1238pxAuto">
+        	<p>数字出版：《中国学术期刊（光盘版）》电子杂志社有限公司</p>
+            <p>京ICP证040431号 互联网出版许可证 新出网证(京)字271号 北京市公安局海淀分局 备案号11010802020460</p>
+        </div>
+    </div>
+    <script>
+		TableTransition($(".tabNav .tab"),$(".tabc"),"click","tab cur","tab")
+		//编辑资料切换操作
+			var frame=$(".item .inputFrame")
+			var input=$(".inputFrame .write")
+			var display=$(".item .enable-edit")
+			var a1=$(".btn-box .edit")
+			var a2=$(".btn-box .save")
+            input.focus(
+                    function(){
+                    frame.removeClass("focus")
+                    $(this).parent(".inputFrame").addClass("focus")
+            })
+            input.blur(
+                    function(){
+                    $(this).parent(".inputFrame").removeClass("focus")
+              })
+			a1.click(
+					function(){
+						$(this).css({"display":"none"});
+						a2.css({"display":"block"});
+						display.css({"display":"none"});
+						frame.css({"display":"block"}) 
+				       $(".inputFrame .write").each(
+						function(){
+						 index=$(this).parents(".item").index()
+						var oldValue=$(".item").eq(index).children(".display").text()			
+						$(this).val(oldValue)	
+		   				 })	
+			})
+		  
+			a2.click(
+					function(){
+						$(this).css({"display":"none"});
+						a1.css({"display":"block"});
+						display.css({"display":"block"});
+						frame.css({"display":"none"})
+				  $(".inputFrame .write").each(
+						function(){
+						 var tempValue=$(this).val()
+						 $(this).parents(".item").children(".enable-edit").text(tempValue)
+		   				 })		
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>推荐好书</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link href="../css/public.css" rel="stylesheet" type="text/css">
+<link href="../css/header-and-footer.css" rel="stylesheet" type="text/css">
+<link href="../css/goodBook/goodbook.css" rel="stylesheet" type="text/css">
+<script src="../js/public/jQuery-v1.11.1.js"></script>
+<script src="../js/public/jquery.promptToggle.js"></script>
+</head>
+<body>
+	<!--header-->
+	<div class="header"> 
+    	<div class="width1238pxAuto">
+        	<a href="#" class="logo left"><img src="../images/header-and-footer/logo.png" width="158" height="71"></a>
+            <div class="topNav left"><a href="#">精选好书</a><a href="#">发现好书</a><a href="#">好书品读</a><a href="#">新书速递</a><a href="#">出版社</a></div>
+            <div class="search left"><input type="text" class="left" autocomplete="off"><a href="javascript:;" class="btn left"></a></div>
+            <div class="status left"><a href="#">登录</a><span class="line left"></span><a href="#">注册</a></div>
+            <a href="#" class="rzbtn left">出版社认证</a>
+        </div>
+    </div>
+    <!--cont-->
+		<div class="gbook">
+        	<div class="detailInfo">
+            	<img class="icon" src="../images/bookDisplay/leaf.png" width="255" height="184">
+            	<div class="sheet">
+                	<div class="title">无止境的逃离</div>
+                    <div class="info clearfix">
+                    	<div class="upload left">
+                            <a href="javascript:;" class="btn">上传图书封面</a>
+                        </div>
+                        <div class="fill left">
+                        	<div class="row clearfix">
+                            	<label class="left"><i><img src="../images/goodBook/icon2.gif" width="8" height="7" align="baseline"></i>作者</label>
+                                <input type="text" class="colorGrey" value="国外作者需要在名字前加上国籍，如【英】XX·XX">
+                            </div>
+                            <div class="row clearfix">
+                            	<label class="left">译者</label>
+                                <input type="text" class="colorGrey" value="国外作者需要在名字前加上国籍，如【英】XX·XX">
+                            </div>
+                            <div class="row clearfix">
+                            	<label class="left"><i><img src="../images/goodBook/icon2.gif" width="8" height="7" align="baseline"></i>出版社</label>
+                                <input type="text">
+                            </div>
+                            <div class="row clearfix">
+                            	<label class="left"><i><img src="../images/goodBook/icon2.gif" width="8" height="7" align="baseline"></i>出版时间</label>
+                                <input type="text">
+                            </div>
+                            <div class="row clearfix">
+                            	<label class="left"><i><img src="../images/goodBook/icon2.gif" width="8" height="7" align="baseline"></i>ISNB</label>
+                                <span>9847558651255</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box clearfix">
+                    	<label class="left">内容简介</label>
+                        <textarea class="colorGrey left">您可以撰写该书的内容简介</textarea>
+                    </div>
+                    <div class="box clearfix">
+                    	<label class="left">图书目录</label>
+                        <textarea class="colorGrey left">您可以撰写该书的图书目录</textarea>
+                    </div>
+                    <div class="box clearfix">
+                    	<label class="left">作者简介</label>
+                        <textarea class="colorGrey left">您可以撰写该书的作者简介</textarea>
+                    </div>
+                    <div class="rebox clearfix">
+                    	<label class="left"><i><img src="../images/goodBook/icon2.gif" width="8" height="7" align="baseline"></i>推荐语</label>
+                        <div class="textarea left">
+                        	<textarea class="colorGrey">您可以撰写对该书的推荐语，也可对该书进行简评...</textarea>
+                            <div class="grade"><span class="left">我对该书的推荐指数是：</span><img class="left" src="../images/bookDisplay/chanel-icon13.png" width="14" height="14"><img class="left" src="../images/bookDisplay/chanel-icon13.png" width="14" height="14"><img class="left" src="../images/bookDisplay/chanel-icon13.png" width="14" height="14"><img class="left" src="../images/bookDisplay/chanel-icon13.png" width="14" height="14"><img class="left" src="../images/bookDisplay/chanel-icon13.png" width="14" height="14"><span class="red">10分 力荐</span></div>
+                        </div>
+                    </div>
+                </div>
+                <a href="javascript:;" class="tj">提　交</a>
+            </div>
+        </div>
+    <!--footer-->
+    <div class="footer">
+    	<div class="width1238pxAuto">
+        	<p>数字出版：《中国学术期刊（光盘版）》电子杂志社有限公司</p>
+            <p>京ICP证040431号 互联网出版许可证 新出网证(京)字271号 北京市公安局海淀分局 备案号11010802020460</p>
+        </div>
+    </div>
+    <script>
+		PromptToggle($(".row input"),"国外作者需要在名字前加上国籍，如【英】XX·XX","colorGrey")
+		PromptToggle($(".rebox textarea"),"您可以撰写对该书的推荐语，也可对该书进行简评...","colorGrey")
+		PromptToggle($(".box textarea"),"您可以撰写该书的内容简介","colorGrey","left")
+		PromptToggle($(".box textarea"),"您可以撰写该书的图书目录","colorGrey","left")
+		PromptToggle($(".box textarea"),"您可以撰写该书的作者简介","colorGrey","left")
+    </script>
+</body>
+</html>

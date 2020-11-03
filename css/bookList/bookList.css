@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+/*精选书单*/
+.blcont{ background-color:#EBEFF5;font-family:"Microsoft Yahei";}
+.blcont .banner{ height:109px; min-width:1238px; background:url(../../images/bookList/bl-banner.jpg) no-repeat center top;}
+.blcont .banner .btn{ margin-right:98px; margin-top:37px; padding-left:50px; width:87px; height:39px; line-height:39px; font-size:18px; color:#ff6600; background:url(../../images/bookList/btn.png) no-repeat; text-decoration:none;}
+.blcont .blist{ padding-left:18px; padding-bottom:60px;}
+.blcont .blist .box{ width:590px; height:443px; border:1px solid #FFFFFF; background-color:#ffffff; margin-right:16px; margin-bottom:20px;}
+.blcont .blist .box .top{ padding:16px 16px 0; border-bottom:1px solid #F4F4F4; position:relative;}
+.blcont .blist .box .top img{ font-size:0; margin-bottom:14px;}
+.blcont .blist .box .top .sc{ position:absolute; top:244px; right:23px; width:42px; height:30px; line-height:30px; font-family:"宋体"; background:url(../../images/bookList/icon3.png) no-repeat 8px center;filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#7F000000', endColorstr='#7F000000'); border-radius:15px; color:#ffffff; padding-left:28px; cursor:pointer;}
+.blcont .blist .box .top .sc:before{content:"收藏";}
+:root  .blcont .blist .box .top .sc{
+	filter:none;	 /*处理IE9浏览器中的滤镜效果*/
+	background-color:rgba(0,0,0,0.5);
+}
+.blcont .blist .box .top .sc.sced{ background-image: url(../../images/bookList/icon4.png);}
+.blcont .blist .box .top .sc.sced:before{ content:"已收藏";}
+.blcont .blist .box .top .tags{ height:20px; margin-bottom:3px;}
+.blcont .blist .box .top .tags span{ float:left; margin-right:6px; line-height:20px; color:#ffffff; padding:0 10px; border-radius:3px; font-family:"宋体";}
+.blcont .blist .box .top .tags .t1{ background-color:#C92E2D;}
+.blcont .blist .box .top .tags .t2{ background-color:#F39410;}
+.blcont .blist .box .top .tags .t3{ background-color:#34BA3D;}
+.blcont .blist .box .top .title{ line-height:40px; font-size:16px; padding-left:30px; background:url(../../images/bookList/icon2.png) no-repeat 6px center;}
+.blcont .blist .box .top .title a{ text-decoration:none; color:#333333;}
+.blcont .blist .box .bottom{ padding:11px 16px 0;}
+.blcont .blist .box .bottom p{ line-height:30px; color:#1b0d02; font-size:14px;}
+.blcont .blist .more{ clear:both; display:block; width:136px; height:37px; line-height:37px; text-align:center; margin:0 auto; color:#ffffff; text-decoration:none; font-size:16px; background-color:#129B77; border-radius:4px;}
+
+/*详情*/
+.blxqcont{ background:url(../../images/bookList/xq-bg.jpg) repeat-y; min-width:1238px;}
+.blxqcont .banner{ height:131px; min-width:1238px; background:url(../../images/bookList/banner.jpg) no-repeat center top; margin-bottom:12px;}
+.blxqcont .lbox{ padding-left:25px; margin-right:58px; width:364px; padding-top:43px;font-family:"Microsoft Yahei"; }
+.blxqcont .lbox img{ border-radius:4px;}
+.blxqcont .lbox h1{ line-height:72px; text-align:center; font-weight:normal; font-size:20px; color:#ffffff; background:url(../../images/bookList/icon1.png) no-repeat center bottom; padding-bottom:5px; margin-bottom:22px;}
+.blxqcont .lbox p{ font-size:14px; line-height:26px; color:#d0ebf4; text-indent:2em;}
+.blxqcont .lbox .tags{ margin-top:45px; padding-left:25px; background:url(../../images/bookList/icon6.png) no-repeat left top;}
+.blxqcont .lbox .tags span{ float:left; line-height:25px; padding:0 8px; color:#ffffff; background-color:rgba(29,51,112,0.2); border:1px solid #455994; margin-right:12px; margin-bottom:14px;}
+.blxqcont .lbox .tags a{ float:left; height:27px; line-height:27px; width:59px; background-color:#495D99;border-radius:4px; color:#38B084; text-align:center;}
+.blxqcont .rbox{ width:790px;}
+.blxqcont .rbox ul{ padding-left:34px; background:url(../../images/bookList/bookshelf.png) no-repeat left 170px; margin-bottom:44px;}
+.blxqcont .rbox ul li{ margin-right:55px;}
+.blxqcont .rbox ul li .img{ margin-bottom:15px; display:block; font-size:0;}
+.blxqcont .rbox ul li .img img{ border-radius:6px;}
+.blxqcont .rbox ul li p{ line-height:42px; text-align:center;}
+.blxqcont .rbox ul li p a{ color:#ffffff; text-decoration:none;}

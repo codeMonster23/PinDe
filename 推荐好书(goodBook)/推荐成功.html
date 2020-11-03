@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>推荐好书</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link href="../css/public.css" rel="stylesheet" type="text/css">
+<link href="../css/header-and-footer.css" rel="stylesheet" type="text/css">
+<link href="../css/goodBook/goodbook.css" rel="stylesheet" type="text/css">
+<script src="../js/public/jQuery-v1.11.1.js"></script>
+<script src="../js/public/jquery.promptToggle.js"></script>
+</head>
+<body>
+	<!--header-->
+	<div class="header"> 
+    	<div class="width1238pxAuto">
+        	<a href="#" class="logo left"><img src="../images/header-and-footer/logo.png" width="158" height="71"></a>
+            <div class="topNav left"><a href="#">精选好书</a><a href="#">发现好书</a><a href="#">好书品读</a><a href="#">新书速递</a><a href="#">出版社</a></div>
+            <div class="search left"><input type="text" class="left" autocomplete="off"><a href="javascript:;" class="btn left"></a></div>
+            <div class="status left"><a href="#">登录</a><span class="line left"></span><a href="#">注册</a></div>
+            <a href="#" class="rzbtn left">出版社认证</a>
+        </div>
+    </div>
+    <!--cont-->
+		<div class="gbook">
+        	<div class="sucshow clearfix">
+            <img class="icon" src="../images/bookDisplay/leaf.png" width="255" height="184">
+             <div class="surface left">
+             	<div class="book"><img src="../imagesTemp/goodBook/pic1.jpg" width="232" height="313"></div>
+                <p><strong>时间的格局</strong>  甘迪  / 北京联合出版公司 / 2018-4</p>
+             </div>
+             <div class="rc left">
+             	<div class="d1 clearfix">
+                	<p class="p1">推荐成功！</p>
+                    <p class="p2">请等待管理员审核</p>
+                </div>
+                <div class="btn clearfix"><a href="#" target="_blank" class="left">继续推荐</a><a href="#" target="_blank" class="left">去首页</a></div>
+             </div>
+            </div>
+        </div>
+    <!--footer-->
+    <div class="footer">
+    	<div class="width1238pxAuto">
+        	<p>数字出版：《中国学术期刊（光盘版）》电子杂志社有限公司</p>
+            <p>京ICP证040431号 互联网出版许可证 新出网证(京)字271号 北京市公安局海淀分局 备案号11010802020460</p>
+        </div>
+    </div>
+    <script>
+		PromptToggle($(".row input"),"国外作者需要在名字前加上国籍，如【英】XX·XX","colorGrey")
+		PromptToggle($(".rebox textarea"),"您可以撰写对该书的推荐语，也可对该书进行简评...","colorGrey")
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+/*推荐好书*/
+.gbook { min-width:1238px; background:#B3E4E9 url(../../images/bookDisplay/book-bg1.jpg) no-repeat center top; padding-top:72px; padding-bottom:125px; }
+.gbook .goodbox { width:589px; margin:0 auto; padding:65px 0 65px 510px; border-radius:4px; background:#ffffff url(../../images/goodBook/surface.jpg) no-repeat left top; box-shadow:-3px 3px 8px rgba(0,0,0,0.2); font-family:"Microsoft Yahei"; position:relative; }
+.gbook .goodbox .img { position:absolute; left:-124px; bottom:-101px; }
+.gbook .goodbox .row { margin-bottom:18px; padding-left:50px; font-size:16px; }
+.gbook .goodbox .row label { line-height:38px; width:40px; text-align:right; margin-right:13px; color:#5d5d5d; }
+.gbook .goodbox .row input { padding:8px; height:20px; line-height:20px; width:416px; border:1px solid #E3E3E3; font-size:16px; }
+.gbook .goodbox .tips { padding-left:105px; font-size:14px; line-height:30px; }
+.gbook .goodbox .tips p { width:376px; }
+.gbook .goodbox .tips .p1 { text-align:right; margin-top:40px; margin-left:15px; }
+.gbook .goodbox .tips .p1 a { color:#0178dd; text-decoration:none; }
+.gbook .goodbox .next { display:block; margin:60px auto 0; width:170px; height:44px; line-height:44px; text-align:center; color:#ffffff; text-decoration:none; background:#09A553; border-radius:3px; font-size:16px; }
+/*信息填写*/
+.detailInfo { font-family:"Microsoft Yahei"; width:1098px; margin:0 auto; border-radius:4px; background:#F6F6F6 url(../../images/goodBook/banner.jpg) no-repeat center top; border-top:8px solid #B5776E; padding-top:85px; box-shadow:-4px 4px 8px rgba(0,0,0,0.2); padding-bottom:20px; position:relative; }
+.detailInfo .sheet { padding:60px 150px 40px; background-color:#ffffff; }
+.detailInfo .sheet .title { border:1px solid #E3E3E3; text-align:center; line-height:48px; font-size:22px; margin-bottom:24px; }
+.detailInfo .sheet .info { margin-bottom:39px; }
+.detailInfo .sheet .info .upload { width:212px; padding-top:228px; height:58px; background:#F8F8F8 url(../../images/goodBook/uploadbg.gif) no-repeat center; border:1px solid #DBDADA; }
+/*.detailInfo .sheet .info .upload p { padding:0 27px; color:#979797; line-height:21px; }
+.detailInfo .sheet .info .upload p span { color:#7481B5;}*/
+.detailInfo .sheet .info .upload .btn { display:block; height:38px; line-height:38px; padding-left:37px; width:89px; text-decoration:none; color:#129B77; background:url(../../images/goodBook/btn.png) no-repeat; margin:0 auto; }
+.detailInfo .sheet .info .fill .row { margin-bottom:24px; font-family:"Microsoft Yahei"; }
+.detailInfo .sheet .info .fill label { width:84px; text-align:right; margin-right:14px; line-height:38px; font-size:16px; color:#5d5d5d; height:38px; overflow:hidden;}
+/*.detailInfo .sheet .info .fill label i{ color:#ff0000; font-size:18px; font-style:normal; margin-right:5px;}*/
+.detailInfo .sheet .info .fill label i{ font-size:0; margin-right:5px;}
+.detailInfo .sheet .info .fill input { float:left; padding:8px 18px; line-height:20px; height:20px; border:1px solid #E3E3E3; font-size:14px; width:447px; }
+.detailInfo .sheet .info .fill .row span { float:left; width:447px; padding:8px 18px; line-height:20px; height:20px; font-size:14px; border:1px solid #E3E3E3; background-color:#F8F8F8; }
+.detailInfo .sheet .box { margin-bottom:20px; }
+.detailInfo .sheet .box label{ margin-right:17px; font-size:16px; line-height:26px; padding-left:5px; color:#5d5d5d;}
+.detailInfo .sheet .box textarea{border:1px solid #E4E4E4; padding:12px 20px; height:107px; width:670px; resize:none; font-family:"Microsoft Yahei"; font-size:14px;}
+.detailInfo .sheet .rebox { padding-top:20px; }
+.detailInfo .sheet .rebox label { padding-left:8px; line-height:22px; margin-right:17px; font-size:16px; color:#5d5d5d; }
+.detailInfo .sheet .rebox label i{ font-size:0; margin-right:5px;}
+.detailInfo .sheet .rebox .textarea { width:710px; height:200px; border:1px solid #E4E4E4; font-size:14px; }
+.detailInfo .sheet .rebox .textarea textarea { padding:12px 20px; height:107px; width:670px; resize:none; font-family:"Microsoft Yahei"; font-size:14px; }
+.detailInfo .sheet .rebox .grade { padding-left:26px; line-height:68px; background-color:#F8F8F8; border-top:1px solid #E3E3E3; height:68px; }
+.detailInfo .sheet .rebox .grade img { margin-top:27px; margin-right:2px; }
+.detailInfo .sheet .rebox .grade .red { color:#ff5f2a; margin-left:10px; }
+.detailInfo .tj { display:block; width:170px; height:44px; line-height:44px; text-align:center; background:#09A553; color:#ffffff; text-decoration:none; border-radius:3px; font-size:16px; margin:20px auto 0; }
+.detailInfo .icon { position:absolute; left:-124px; bottom:-61px; }
+/*推荐成功*/
+.sucshow { width:1099px; margin:0 auto; border-radius:6px; background-color:#ffffff; box-shadow:-4px 4px 8px rgba(0,0,0,0.2); font-family:"Microsoft Yahei"; position:relative; }
+.sucshow .surface { padding-top:114px; background:url(../../images/goodBook/surface.png) no-repeat center top; width:509px; }
+.sucshow .surface .book { padding:22px 19px; margin:0 auto 30px; background:#ffffff; box-shadow:0 0 10px rgba(0,0,0,0.2); width:232px; }
+.sucshow .surface p { line-height:70px; padding-bottom:18px; text-align:center; color:#664e3a; font-size:16px; }
+.sucshow .surface p strong { font-size:20px; }
+.sucshow .rc { padding-left:140px; padding-top:170px; }
+.sucshow .rc .d1 { padding:5px 0 5px 118px; background:url(../../images/goodBook/icon1.png) no-repeat left center; margin-bottom:50px; }
+.sucshow .rc .d1 .p1 { font-size:38px; line-height:57px; }
+.sucshow .rc .d1 .p2 { font-size:16px; line-height:30px; }
+.sucshow .rc .btn a { width:138px; height:44px; text-align:center; line-height:44px; border:1px solid #09A553; margin-right:20px; border-radius:3px; font-size:16px; text-decoration:none; color:#129B77; }
+.sucshow .icon { position:absolute; left:-110px; bottom:-120px; }
+/*书已存在*/
+.gbook .goodbox .error{ padding-left:120px; line-height:20px; color:#ff0000; font-size:14px; margin-bottom:8px;}
+.gbook .goodbox .bc{ margin-left:103px; padding-left:17px; padding-top:20px; width:416px; height:222px; background-color:#FCF6F1; border-radius:3px; margin-bottom:-20px;}
+.gbook .goodbox .bc .imgbook{margin-right:25px;}
+.gbook .goodbox .bc .imgbook img{ border-radius:6px; box-shadow:3px 3px 6px rgba(0,0,0,0.3); }
+.gbook .goodbox .bc h1{ font-weight:normal; font-size:16px; line-height:50px; margin-bottom:33px;}
+.gbook .goodbox .bc h1 a{ color:#403E3D; text-decoration:none;}
+.gbook .goodbox .bc .p1{ line-height:24px; font-size:14px;}
+.gbook .goodbox .bc .p1 a{ color:#1F9ED6; text-decoration:none;}
+.gbook .goodbox .bc .btn{ display:block; width:86px; height:28px; text-align:center; line-height:28px; background-color:#129B77; color:#ffffff; text-decoration:none; margin-top:15px;}

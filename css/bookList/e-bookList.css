@@ -1,0 +1,643 @@
+@charset "utf-8";
+/* CSS Document */
+.width1190pxAuto{
+	width: 1190px;
+	margin: 0 auto;
+}
+.skin01{
+	background: #efc969 url("../../images/bookList/skin01.jpg") center top no-repeat;
+}
+.skin02{
+	background: #f3e1d3 url("../../images/bookList/skin02.jpg") center top no-repeat;
+}
+.skin03{
+	background: #cde1d5 url("../../images/bookList/skin03.jpg") center top no-repeat;
+}
+.skin04{
+	background: #e898b2 url("../../images/bookList/skin04.jpg") center top no-repeat;
+}
+.skin05{
+	background: #5085b5 url("../../images/bookList/skin05.jpg") center top no-repeat;
+}
+.skin06{
+	background: #7386c1 url("../../images/bookList/skin06.jpg") center top no-repeat;
+}
+.e-header{
+	position: relative;
+	height: 182px;
+	padding-top: 84px;
+	text-align: center;
+}
+.e-header .actions{
+	position: absolute;
+	right:0;
+	bottom:0;
+	height: 34px;
+}
+.e-header .actions span{
+	float: left;
+	line-height: 34px;
+	padding-left: 26px;
+	background: url("../../images/bookList/icon16.png") left center no-repeat;
+	font-size: 14px;
+	color:#3d3d3d;
+	cursor: pointer;
+}
+.e-header .actions span.active{
+	background-image: url("../../images/bookList/icon16-a.png") ;
+}
+.e-header .actions .like{
+	background-image: url("../../images/bookList/icon15.png");
+}
+.e-header .actions .like.active{
+	background-image: url("../../images/bookList/icon15-a.png");
+}
+.e-header .actions .changeSkin{
+	width: 26px;
+	height: 28px;
+	padding-left: 0;
+	margin-top: 3px;
+	background-image: url("../../images/bookList/icon17.png") ;
+}
+.e-title{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 102px;
+	margin:0 auto;
+}
+.e-title.active{
+	min-width: 687px;
+	width:auto;
+	padding:0 20px;
+	border:1px dashed #fff;
+	background: rgba(255,255,255,.2);
+}
+.e-title input{
+	width: 100%;
+	height: 102px;
+	background: none;
+	font:bold 48px/102px "MicrosoftYaHei";
+	color:#833c36;
+	text-align: center;
+}
+.e-title .settings{
+	display: none;
+	position: absolute;
+	left:-1px;
+	top:-32px;
+	width: 184px;
+	height:28px;
+	line-height: 28px;
+	border: 1px solid #d2d2d2;
+	background: url("../../images/bookList/bg3.jpg");
+	color:#3d3d3d;
+}
+.e-title .settings span{
+	float: left;
+	height: 28px;
+	border-right: 1px solid #d2d2d2;
+	cursor: pointer;
+}
+.e-title .settings .num{
+	width: 29px;
+}
+.e-title .settings .arrow{
+	width: 13px;
+	background: url("../../images/bookList/icon23.png") center no-repeat;
+}
+.e-title .settings .dropdown{
+	position: relative;
+}
+.e-title .settings .dropdown ul{
+	display: none;
+	position: absolute;
+	left:-1px;
+	top:28px;
+	width:43px;
+	border: 1px solid #d2d2d2;
+	background: #fff;
+}
+.e-title .settings .dropdown li{
+	font:14px/28px "MicrosoftYaHei";
+	cursor: pointer;
+}
+.e-title .settings .color,.e-title .settings .save{
+	width: 38px;
+}
+.e-title .settings .restore{
+	width: 62px;
+}
+.e-title .settings .save{
+	border:none;
+	background: #ff9c00;
+	color:#fff;
+}
+.e-main .abstract{
+	width: 1141px;
+	padding:0 24px 28px;
+	margin-bottom: 24px;
+	border: 1px solid #ddccb9;
+	background: #fff url("../../images/bookList/bg2.png") right bottom no-repeat;
+}
+.e-main .abstract h2{
+	line-height: 34px;
+	padding-left: 52px;
+	margin-top: 4px;
+	background: url("../../images/bookList/icon7.png") 25px center no-repeat;
+	color:#666;
+	font-size: 16px;
+}
+.e-main .abstract .content{
+	padding: 10px;
+	background: #f7f4eb;
+	color:#666;
+	font:14px/30px "Simsun";
+}
+.e-main .abstract .textField{
+	position: relative;
+	height: 70px;
+	border: 1px dashed #f7f4eb;
+}
+.e-main .abstract .textField.active{
+	height: 100px;
+	border-color:#b1a49b;
+	background: #fff;
+}
+.e-main .abstract textarea{
+	width: 1091px;
+	padding:5px 14px;
+	background: #f7f4eb;
+	color:#666;;
+	font: 14px/30px "Simsun";
+	resize: none;
+}
+.e-main .abstract .textField.active textarea{
+	height: 90px;
+	background: #fff;
+}
+.e-main .abstract .textField .count{
+	display: none;
+	position: absolute;
+	right:14px;
+	bottom:0;
+	font-size: 12px;
+	color:#000;
+}
+.e-main .abstract .textField.active .count{
+	display: block;
+}
+.e-main .abstract .tags{
+	padding:0 9px;
+}
+.e-main .abstract .tags span{
+	float: left;
+	width: 77px;
+	height: 26px;
+	line-height: 26px;
+	margin:0 5px;
+	border: 1px solid #dcdcdc;
+	border-radius:4px;
+	background: #fff;
+	text-align: center;
+}
+.e-main .abstract .content .o{
+	color:#FF3600;
+}
+.e-main .abstract .content .t{
+	color:#ea9401;
+}
+.e-main .abstract .content .th{
+	color:#217CF7;
+}
+.e-main .abstract .content .f{
+	color:#04c164;
+}
+.e-main .abstract .content .fi{
+	color:#8f1eaf;
+}
+.e-main .abstract .editTag{
+	width: 1091px;
+	height: 40px;
+	line-height: 40px;
+	padding:0 14px;
+	margin-top: 10px;
+	border: 1px dashed #b1a49b;
+	background: #fff;
+}
+.e-main .abstract .editTag strong{
+	float: left;
+	margin-right: 5px;
+	color:#5d5d5d;
+}
+.e-main .abstract .editTag .keyword{
+    position: relative;
+	float: left;
+	width: 75px;
+    height: 26px;
+	line-height: 26px;
+	margin:7px 5px 0 0;
+	border: 1px solid #dcdcdc;
+	border-radius: 4px;
+	text-align: center;
+}
+.e-main .abstract .editTag .keyword .close{
+	position: absolute;
+	top: -5px;
+	right: -3px;
+	width: 13px;
+	height: 13px;
+	background: url("../../images/bookList/icon28.png");
+	cursor: pointer;
+}
+.e-main .abstract .editTag input{
+	float: left;
+	width: 180px;
+    height: 40px;
+	line-height: 40px;
+	font-size: 12px;
+	color: #998c82;
+}
+.e-main .e-con{
+	padding-top: 32px;
+	border: 1px solid #e8cc69;
+	background: #fff;
+}
+.e-con .category{
+	height: 50px;
+	padding-left: 50px;
+	border-bottom: 1px solid #f0f0f0;
+}
+.e-con .category span{
+	position: relative;
+	float: left;
+	width: 134px;
+	height: 50px;
+	margin-right: 2px;
+	text-align: center;
+	font:16px/50px "MicrosoftYaHei";
+	color:#333;
+	cursor: pointer;
+}
+.e-con .category span.cur{
+	font-weight: bold;
+}
+.e-con .category span i{
+	position: absolute;
+	right:3px;
+	top:3px;
+	width: 14px;
+	height: 14px;
+	background: url("../../images/bookList/icon29.png") no-repeat;
+
+}
+.e-con .category span.add{
+	width: 49px;
+	height: 49px;
+	margin-left:15px;
+	background: url("../../images/bookList/icon33.png") no-repeat;
+}
+.e-con .category span.o{
+	background: url("../../images/bookList/icon10.png");
+}
+.e-con .category span.t{
+	background: url("../../images/bookList/icon11.png");
+}
+.e-con .category span.th{
+	background: url("../../images/bookList/icon12.png");
+}
+.e-con .category span.f{
+	background: url("../../images/bookList/icon13.png");
+}
+.e-con .category span.fi{
+	background: url("../../images/bookList/icon14.png");
+}
+.e-con .category .all{
+	width: 76px;
+	margin-right: 20px;
+	padding-left: 58px;
+	background: #FFEAE9 url("../../images/bookList/icon9.png") 34px center no-repeat;
+	color:#e83e3e;
+	font-weight: bold;
+	text-align: left;
+}
+.e-con .list{
+	width: 1140px;
+	padding-top: 65px;
+	padding-bottom: 20px;
+	margin: -40px 24px 0;
+	background: #faf9f5;
+}
+.e-con .list ul{
+	padding:0 10px;
+}
+.e-con .list li{
+	position: relative;
+	float: left;
+	width: 196px;
+	height: 289px;
+	margin:0 13px;
+	border: 1px solid #faf9f5;
+}
+.e-con .list li:hover{
+	border-color: #e9ba54;
+	background:#F7F1DA;
+}
+.e-con .list li .cover{
+	width:178px;
+	height:248px;
+	margin:10px auto 0;
+	background: url("../../images/bookList/bg3.png") no-repeat;
+}
+.e-con .list li .cover img{
+	width: 172px;
+	height: 242px;
+	margin-top:1px;
+	margin-left: 1px;
+}
+.e-con .list li p{
+	line-height: 30px;
+	text-align: center;
+}
+.e-con .list li p a{
+	color:#000;
+}
+.e-con .list li .transfer{
+	position: absolute;
+	right: 35px;
+    top: -10px;
+	width: 18px;
+	height: 17px;
+	background: url("../../images/bookList/icon30.png") no-repeat;
+	cursor: pointer;
+}
+.e-con .list li .del{
+	position: absolute;
+	right: 8px;
+    top: -10px;
+	width: 20px;
+	height: 20px;
+	background: url("../../images/bookList/icon31.png") no-repeat;
+	cursor: pointer;
+}
+.e-con .list li.add .cover{
+	text-align: center;
+}
+.e-con .list li.add img{
+	width: 64px;
+	height: 64px;
+	margin-top:84px;
+}
+.page { 
+	height: 38px; 
+	padding-bottom: 40px;
+	text-align: center; 
+}
+.page a,.page span{
+	display: inline-block; 
+	vertical-align: middle; 
+	height: 32px; 
+	line-height: 32px;
+	padding: 0 12px; 
+	margin: 0 3px; 
+	border: 1px solid #ddd; 
+	background: #fff; 
+	font-size: 14px; 
+	color:#333;
+	font-weight: normal;
+}
+.page a:hover{
+	background: #e36c63; 
+	color:#fff;
+}
+.page span.cur { 
+	border:none;
+	background: #e36c63; 
+	color:#fff;
+}
+.share{
+	position: absolute;
+	left:50%;
+	margin-left: 598px;
+	top:720px;
+	width: 50px;
+	border: 1px solid #e8cc69;
+	background: #fff;
+}
+.shareBtn{
+	display: block;
+	height: 50px;
+	border-bottom: 1px solid #d8b55f;
+	background: url("../../images/bookList/icon21.png") center no-repeat;
+	cursor: pointer;
+}
+.share .slideBox{
+	display: none;
+}
+.share .slideBox li{
+	height: 40px;
+	padding-top: 7px;
+	text-align: center;
+}
+.share .foldBtn{
+	display: block;
+	height: 15px;
+	border-top: 1px solid #eaebe9;
+	background: url("../../images/bookList/icon22.png") center no-repeat;
+	cursor: pointer;
+}
+.e-main .comment{
+	width: 1062px;
+	margin: 0 auto;
+	background: #fff;
+}
+.e-main .comment .title{
+	height: 38px;
+	padding-left: 20px;
+	border-bottom: 2px solid #159C77;
+	background: url("../../images/bookList/icon25.png") left center no-repeat;
+	font:24px/38px "MicrosoftYaHei";
+	color:#3d3d3d;
+}
+.e-main .writeComment,.e-main .commentList{
+	width: 980px;
+	margin:0 auto;
+}
+.e-main .writeComment{
+	padding-top: 15px;
+	border-bottom: 1px solid #eee;
+}
+.e-main .comment h2{
+	height: 58px;
+    border: none;
+    background: url("../../images/bookList/icon24.png") left center no-repeat;
+}
+.e-main .comment .textField{
+	position: relative;
+	height: 167px;
+	border: 1px solid #e5e5e5;
+	margin-bottom: 56px;
+}
+.e-main .comment textarea{
+	width: 868px;
+    height: 104px;
+    line-height: 24px;
+	padding: 6px 10px;
+	resize: none;
+}
+.e-main .comment .textField .count{
+	position: absolute;
+	bottom: 45px;
+	right: 18px;
+	line-height: 36px;
+    font-size: 14px;
+    color: #3b3b3b;
+}
+.e-main .comment .textField .btnWrap{
+	height: 47px;
+	border-top: 1px solid #f2f2f2;
+	background: #f8f8f8;
+}
+.e-main .comment .textField .submit{
+	width: 100px;
+	height: 36px;
+	border-radius: 18px;
+	margin: 6px 10px 0 0;
+	background: #22b17c;
+	color: #fff;
+	font: 16px/36px "微软雅黑";
+	text-align: center;
+}
+.e-main .commentList{
+	margin-bottom: 68px;
+}
+.e-main .commentList .item{
+	padding: 15px 0;
+	border-bottom: 1px solid #eee;
+}
+.e-main .commentList .avatar img{
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+}
+.e-main .commentList .nickname{
+	width: 169px;
+	line-height: 36px;
+	margin-left: 10px;
+	font-size: 14px;
+} 
+.e-main .commentList .content{
+	width: 765px;
+	line-height: 30px;
+	font-size: 14px;
+}
+.e-main .commentList .rating{
+	width: 92px;
+	height: 15px;
+	margin:9px 0 12px;
+	background: url("../../images/bookList/icon27.png")no-repeat;
+}
+.e-main .commentList .rating span{
+	display: block;
+	width: 80%;
+	height: 100%;
+	background: url("../../images/bookList/icon27-a.png")no-repeat;
+}
+.e-main .commentList p{
+	color:#b3b3b3;
+	overflow: hidden;
+}
+.e-main .commentList .desc{
+	color:#000;
+}
+.e-main .commentList .like{
+	padding-left: 20px;
+	background: url("../../images/bookList/icon26.png") left center no-repeat;
+}
+.e-main .commentList .like.active{
+	background-image: url("../../images/bookList/icon26-a.png") ;
+}
+.e-con .btnGroup{
+	height: 40px;
+	margin-top: 44px;
+	padding:32px 25px 32px 5px;
+	border-top: 1px solid #f2f2f2;
+}
+.e-con .btnGroup button{
+	width: 130px;
+	height: 40px;
+	border:none;
+	outline:none;
+	border-radius:4px;
+	margin-left:30px;
+	background: #0ea754;
+	color:#fff;
+	font:16px/40px "MicrosoftYaHei";
+	cursor: pointer;
+}
+.e-con .btnGroup button.submit{
+	background: #ff5400;
+}
+.skinWrap {
+	position: relative;
+	display: none;
+}
+.skinWrap .skin{
+	height: 124px;
+	padding:21px 0;
+	border-bottom:1px solid #a7a6a4;
+	background: #fff;
+}
+.skinWrap .showArea {
+	position: relative;
+	width: 1340px;
+	margin: 0 auto;
+}
+.skinWrap .showArea .prev,.skinWrap .showArea .next {
+    position: absolute;
+    cursor: pointer;
+    width: 45px;
+    height: 74px;
+    background: url(../../images/bookList/skin-pre.png) no-repeat;
+    top: 21px;
+}
+.skinWrap .showArea .prev{
+	left: -48px;
+}
+.skinWrap .showArea .next {
+	right: -48px;
+    background-image: url(../../images/bookList/skin-next.png);
+}
+.skinWrap .showArea ul {
+    height: 124px;
+    margin: 0 auto;
+}
+.skinWrap .showArea ul li {
+    float: left;
+    width: 244px;
+    height: 124px;
+    margin: 0 12px;
+    position: relative;
+    cursor: pointer;
+}
+.skinWrap .showArea ul li img{
+	width: 244px;
+	height: 124px;
+}
+.skinWrap li .cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../images/bookList/edit-skin.png) right top no-repeat;
+}
+.skinWrap .foldBtn{
+	position: absolute;
+	bottom:-33px;
+	left:50%;
+	margin-left:550px;
+	width: 122px;
+	height: 33px;
+	background: url(../../images/bookList/icon35.png) no-repeat;
+}

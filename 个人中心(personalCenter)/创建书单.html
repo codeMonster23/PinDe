@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>创建书单</title>
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/header-and-footer.css">
+    <link rel="stylesheet" href="../css/personalCenter/pc.css">
+</head>
+
+<body>
+   <!--header-->
+	<div class="header sdheader" style="overflow:hidden;"> 
+    	<div class="width1238pxAuto">
+        	<a href="#" class="logo left"><img src="../images/header-and-footer/logo.png" width="158" height="71"></a>
+           <img class="left" src="../images/header-and-footer/logo2.png" width="105" height="71">
+           <div class="right control clearfix">
+           		<a href="#" class="right a1">发布书单</a>
+                <a href="#" class="right a2">预 览</a>
+                 <a href="#" class="right a3">保 存</a>
+           </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="width1238pxAuto clearfix">
+            <div class="left editArea">
+                <div class="cover">
+                    <img src="../imagesTemp/personalCenter/book1.jpg" alt="">
+                </div>
+                <input type="text" placeholder="在此输入书单名称">
+                <img class="divider" src="../images/personalCenter/icon4.png" alt="">
+                <div class="txtWrap">
+                    <textarea placeholder="在此输入书单简介"></textarea>
+                    <span class="wordLimit">0/200</span>
+                </div>
+                <div class="tag">
+                        <div class="frame clearfix" id="parentFrame">
+                  			<input class="colorGrey bg" id="keyword" type="text" value="在此添加标签，多个标签请用空格隔开" autocomplete="off" />
+                		</div>
+                    </div>
+            </div>
+            <div class="right bookcase">
+                <ul class="clearfix">
+                    <li>
+                        <div class="book">
+                            <div class="cover">
+                                <img src="../imagesTemp/personalCenter/book2.jpg" alt="">
+                                <a href="javascript:;" class="close"></a>
+                            </div>
+                            <p class="name">高兴死了</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="book">
+                            <div class="cover">
+                                <img src="../imagesTemp/personalCenter/book2.jpg" alt="">
+                                <a href="javascript:;" class="close"></a>
+                            </div>
+                            <p class="name">高兴死了</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="book">
+                            <div class="cover">
+                                <img src="../imagesTemp/personalCenter/book2.jpg" alt="">
+                                <a href="javascript:;" class="close"></a>
+                            </div>
+                            <p class="name">高兴死了</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="add"></div>
+                    </li>
+                    <li>
+                        <div class="book">
+                            <div class="cover">
+                                <img src="../imagesTemp/personalCenter/book2.jpg" alt="">
+                                <a href="javascript:;" class="close"></a>
+                            </div>
+                            <p class="name">高兴死了</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="book">
+                            <div class="cover">
+                                <img src="../imagesTemp/personalCenter/book2.jpg" alt="">
+                                <a href="javascript:;" class="close"></a>
+                            </div>
+                            <p class="name">高兴死了</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="book">
+                            <div class="cover">
+                                <img src="../imagesTemp/personalCenter/book2.jpg" alt="">
+                                <a href="javascript:;" class="close"></a>
+                            </div>
+                            <p class="name">高兴死了</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="add"></div>
+                    </li>
+                    <li>
+                        <div class="add"></div>
+                    </li>
+                    <li>
+                        <div class="add"></div>
+                    </li>
+                    <li>
+                        <div class="add"></div>
+                    </li>
+                    <li>
+                        <div class="add"></div>
+                    </li>
+                </ul>
+                <a href="#" target="_blank" class="btn-add">添加图书...</a>
+            </div>
+        </div> 
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <div class="width1238pxAuto">
+            <p>数字出版：《中国学术期刊（光盘版）》电子杂志社有限公司</p>
+            <p>京ICP证040431号 互联网出版许可证 新出网证(京)字271号 北京市公安局海淀分局 备案号11010802020460</p>
+        </div>
+    </div>
+    <script src="../js/public/jQuery-v1.11.1.js"></script>
+    <script src="../js/public/placeholder.js"></script>
+    <script src="../js/public/jquery-migrate-1.1.1.js"></script>
+    <script src="../js/public/jquery.dragsort-0.5.1.min.js"></script>
+    <script>
+		 /*插入关键字*/
+    (function(){
+    var input=$("#keyword");
+    var jsNode=document.getElementById("keyword");
+    function CreateKeywordNode(value)
+    {
+      var keyword=document.createElement("div");
+      var closeIt=document.createElement("div");
+      closeIt.className="close";
+      keyword.className="keyword";
+      var text=document.createTextNode(value);
+      keyword.appendChild(text);
+      keyword.appendChild(closeIt);
+      document.getElementById("parentFrame").insertBefore(keyword,jsNode);
+        jsNode.value="";
+    }
+    /*根据用户的输入是否带有空格来判断*/
+    input.keyup(function(e)
+    {
+      var value=$(this).val();
+      var useInputLength=value.length;
+      
+      if($.trim(value).length!=useInputLength && Boolean($.trim(value).length))
+      {
+        var children=$(this).parent().children();
+        var sumLen=0;
+        var childrenLen=children.length;
+        for(var i=0;i<childrenLen;i++)
+        {
+          sumLen += children.eq(i).width();
+        }
+        if(/*sumLen<350*/1)
+        {
+          CreateKeywordNode(jsNode.value);
+          $(".keyword .close").click(function(){$(this).parent().remove();});
+        }
+      }
+    });
+    input.focus(function()
+    {
+      if($(this).val()=="在此添加标签，多个标签请用空格隔开")
+      {
+        $(this).val("");
+		$(this).removeClass("bg")
+        $(this).removeClass("colorGrey");
+        $(this).css({"width":"120px"})
+      }
+    })
+    input.blur(function()
+    {
+      if($(this).val()=="" && $(this).parent().children().length==1)
+      {
+        $(this).val("在此添加标签，多个标签请用空格隔开");
+        $(this).addClass("colorGrey bg");
+        $(this).css({"width":"300px"})
+      }
+      else
+      {
+        var value=$(this).val();
+        var useInputLength=value.length;
+        if($.trim(value).length==useInputLength && Boolean($.trim(value).length))
+        {
+          var children=$(this).parent().children();
+          var sumLen=0;
+          var childrenLen=children.length;
+          for(var i=0;i<childrenLen;i++)
+          {
+            sumLen += children.eq(i).width();
+          }
+          if(sumLen<350)
+        {
+            CreateKeywordNode(jsNode.value);
+            $(".keyword .close").click(function(){$(this).parent().remove();});
+          }
+        }
+      }
+    })
+      })()
+    </script>
+    <script>
+        // 拖拽排序
+        $(".bookcase ul").dragsort({
+            dragSelector: "li",
+            dragBetween: true 
+        });
+        // 删除
+        // var book=$(".bookcase li");
+        // var bookArr=[];
+        // book.each(function(){
+        //     bookArr.push($(this));
+        // });
+        
+        $('.bookcase .book .close').click(function(){
+            $(this).parents('li').remove();
+            var index=$(this).parents('li').index();
+        });
+    </script>
+</body>
+</html>
